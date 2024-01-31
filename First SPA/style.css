@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --text-color-darker:hsl(240, 7%, 78%);
+  --text-color:hsl(240, 9%, 89%);
+  font-size: clamp(40%, 1% + 2vw, 62.5%);
+  font-family: 'Roboto', sans-serif;
+}
+
+html, body {
+  height: 100%;
+  overflow: hidden;
+}
+
+nav {
+  position: absolute;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  gap: 5.4rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  margin-left: 7.2rem;
+}
+
+nav a {
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  text-decoration: none;
+  color: var(--text-color-darker);
+}
+
+a:hover {
+  color: var(--text-color);
+  font-weight: 700;
+}
+
+.background{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.home-page {
+  background-image: url(./assets/home-bg.png);
+}
+
+.universe-page {
+  background-image: url(./assets/universe-bg.png);
+}
+
+.explorer-page {
+  background-image: url(./assets/explorer-bg.png);
+}
+
+.home-content {
+  display: grid;
+  height: 100vh;
+  place-content: center;
+}
+
+.universe-content,
+.explorer-content {
+  height: 100vh;
+  padding-top: 18.4rem;
+  padding-left: 7.2rem;
+}
+
+.home-content h1,
+.universe-content h1,
+.explorer-content h1 {
+  color: var(--text-color);
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 125%; 
+}
+
+.universe-content p {
+  color: var(--text-color-darker);
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  width: 64.8rem;
+  height: 20rem;
+  margin-top: 1.6rem;
+}
+
+.explorer-content p {
+  color: var(--text-color-darker);
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  width: 64.8rem;
+  height: 20rem;
+  margin-top: 1.6rem;
+}
+
+.home-content button {
+  color: var(--text-color);
+  font-family: 'Roboto', sans-serif;
+  background-color: transparent;
+  border: .2rem solid white;
+  border-radius: .5rem;
+
+  padding: 1.2rem 3.2rem;
+  margin-top: 2.4rem;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  cursor: pointer;
+}
+
+.home-content button:hover {
+  font-weight: 700;
+}
